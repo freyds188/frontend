@@ -13,7 +13,7 @@ function Dashboard() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link onClick={() => navigate('/add-product')}>Add Product</Nav.Link>
+              <Nav.Link onClick={() => navigate('/add-product')}>Add a Product</Nav.Link>
               <Nav.Link onClick={() => navigate('/view-products')}>View Products</Nav.Link>
             </Nav>
           </Navbar.Collapse>

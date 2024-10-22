@@ -1,4 +1,3 @@
-// src/components/EditProduct.js
 import React, { useState, useEffect } from 'react';
 import { Form, Button, Container } from 'react-bootstrap';
 import { useParams, useNavigate } from 'react-router-dom';
@@ -51,7 +50,6 @@ const EditProduct = () => {
     <Container>
       <h2>Edit Product</h2>
       <Form onSubmit={handleSubmit}>
-        {/* Barcode Field */}
         <Form.Group controlId="barcode">
           <Form.Label>Barcode</Form.Label>
           <Form.Control
@@ -63,7 +61,6 @@ const EditProduct = () => {
           />
         </Form.Group>
 
-        {/* Description Field */}
         <Form.Group controlId="description">
           <Form.Label>Description</Form.Label>
           <Form.Control
@@ -75,7 +72,6 @@ const EditProduct = () => {
           />
         </Form.Group>
 
-        {/* Price Field */}
         <Form.Group controlId="price">
           <Form.Label>Price</Form.Label>
           <Form.Control
@@ -87,7 +83,6 @@ const EditProduct = () => {
           />
         </Form.Group>
 
-        {/* Quantity Field */}
         <Form.Group controlId="quantity">
           <Form.Label>Quantity</Form.Label>
           <Form.Control
@@ -99,7 +94,6 @@ const EditProduct = () => {
           />
         </Form.Group>
 
-        {/* Category Field */}
         <Form.Group controlId="category">
           <Form.Label>Category</Form.Label>
           <Form.Control

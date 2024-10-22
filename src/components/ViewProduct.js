@@ -44,12 +44,11 @@ const ViewProduct = () => {
     navigate(`/edit-product/${id}`);
   };
 
-  // Filter products based on search term (only for ID, name, and barcode)
   const filteredProducts = products.filter((product) => {
     return (
       product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       product.barcode.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      product.id.toString().includes(searchTerm) // Convert ID to string for comparison
+      product.id.toString().includes(searchTerm) 
     );
   });
 

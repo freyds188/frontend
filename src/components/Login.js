@@ -1,4 +1,3 @@
-// src/components/Login.js
 import React, { useState } from 'react';
 import { Form, Button, Container } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
@@ -10,7 +9,6 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your authentication logic here
     if (username === 'admin' && password === 'password') {
       navigate('/view-products');
     } else {
@@ -22,7 +20,6 @@ const Login = () => {
     <Container>
       <h2>Login</h2>
       <Form onSubmit={handleSubmit}>
-        {/* Username Field */}
         <Form.Group controlId="formUsername">
           <Form.Label>Username</Form.Label>
           <Form.Control
@@ -30,11 +27,8 @@ const Login = () => {
             placeholder="Enter username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
-            required
-          />
+            required/>
         </Form.Group>
-
-        {/* Password Field */}
         <Form.Group controlId="formPassword">
           <Form.Label>Password</Form.Label>
           <Form.Control

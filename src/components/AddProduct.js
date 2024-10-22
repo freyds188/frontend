@@ -1,4 +1,3 @@
-// src/components/AddProduct.js
 import React, { useState } from 'react';
 import { Form, Button, Container } from 'react-bootstrap';
 import axios from 'axios';

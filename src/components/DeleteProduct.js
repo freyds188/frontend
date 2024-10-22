@@ -1,4 +1,3 @@
-// src/components/DeleteProduct.js
 import React, { useEffect } from 'react';
 import { Container, Button } from 'react-bootstrap';
 import { useParams, useNavigate } from 'react-router-dom';
@@ -27,7 +26,7 @@ const DeleteProduct = () => {
     <Container>
       <h2>Delete Product</h2>
       <p>Are you sure you want to delete the product with ID: {id}?</p>
-      <Button variant="danger" onClick={handleDelete}>Yes, Delete</Button>
+      <Button variant="danger" onClick={handleDelete}>Yes, Delete.</Button>
       {' '}
       <Button variant="secondary" onClick={handleCancel}>Cancel</Button>
     </Container>
